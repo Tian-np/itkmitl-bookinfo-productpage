@@ -1,0 +1,8 @@
+gitservices:
+  productpage:
+    build: .
+    image: ghcr.io/tian-np/bookinfo-productpage:dev
+    ports:
+      - "8083:9080"
+    environment:
+      ENABLE_EXTERNAL_BOOK_SERVICE: "true"
